@@ -76,8 +76,8 @@ app.post('/', async (req, res) => {
     const aoValue2 = parseInt(AO2);
     const doValue2 = parseInt(DO2);
 
-    console.log("Sensor 1 - AO Value:",AO1);
-    console.log("Sensor 1 - DO Value:", doValue1);
+    console.log("Sensor 1 - AO1:",AO1);
+
     console.log("Sensor 2 - AO Value: changed ", AO2);
     console.log("Sensor 2 - DO Value:", doValue2);
 
