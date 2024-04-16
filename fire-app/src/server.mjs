@@ -78,7 +78,7 @@ app.post('/', async (req, res) => {
 
     console.log("Sensor 1 - AO Value:",AO1);
     console.log("Sensor 1 - DO Value:", doValue1);
-    console.log("Sensor 2 - AO Value:", aoValue2);
+    console.log("Sensor 2 - AO Value: changed ", AO2);
     console.log("Sensor 2 - DO Value:", doValue2);
 
     let room;
