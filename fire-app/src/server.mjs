@@ -64,18 +64,19 @@ app.post('/', async (req, res) => {
     console.log("this is my request data in json formate ");
     const requestData = JSON.parse(req.body.data);
     console.log(requestData);
-    const AO11=requestData.AO1;
-    // Extract AO and DO values from the parsed data
-    const AO1 = requestData.data.AO1;
-    const DO1 = requestData.data.DO1;
-    const AO2 = requestData.data.AO2;
-    const DO2 = requestData.data.DO2;
+    const AO1 = requestData.AO1;
+    const DO1 = requestData.DO1;
+    const AO2 = requestData.AO2;
+    const DO2 = requestData.DO2;
     // Extract AO and DO values for Sensor 1
     const aoValue1 = parseInt(AO1);
     const doValue1 = parseInt(DO1);
     const aoValue2 = parseInt(AO2);
     const doValue2 = parseInt(DO2);
-
+    console.log("typeof A01");
+    console.log(typeof(AO1));
+    console.log("typeof aoValue1");
+    console.log(typeof(aoValue1));
     console.log("Sensor 1 - AO1:",AO1);
     console.log("requestData.AO1;",AO11);
     console.log("Sensor 2 - AO Value: changed ", AO2);
