@@ -61,10 +61,10 @@ app.post('/', async (req, res) => {
   try {
     console.log("the request is");
     console.log(req.body); // Log the request body directly
-
+    console.log("this is my request data in json formate ");
     const requestData = JSON.parse(req.body.data);
     console.log(requestData);
-
+    const AO11=requestData.AO1;
     // Extract AO and DO values from the parsed data
     const AO1 = requestData.data.AO1;
     const DO1 = requestData.data.DO1;
@@ -77,7 +77,7 @@ app.post('/', async (req, res) => {
     const doValue2 = parseInt(DO2);
 
     console.log("Sensor 1 - AO1:",AO1);
-
+    console.log("requestData.AO1;",AO11);
     console.log("Sensor 2 - AO Value: changed ", AO2);
     console.log("Sensor 2 - DO Value:", doValue2);
 
