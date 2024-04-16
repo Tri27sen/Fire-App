@@ -78,7 +78,7 @@ app.post('/', async (req, res) => {
     console.log("typeof aoValue1");
     console.log(typeof(aoValue1));
     console.log("Sensor 1 - AO1:",AO1);
-    console.log("requestData.AO1;",AO11);
+    
     console.log("Sensor 2 - AO Value: changed ", AO2);
     console.log("Sensor 2 - DO Value:", doValue2);
 
