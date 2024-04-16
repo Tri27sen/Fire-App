@@ -121,8 +121,8 @@ function sendSMS(room) {
   client.messages
     .create({
       body: `Fire detected! Sensor values exceeded 500. Click on ${url}`,
-      from: '+12513579623',
-      to: '+917439491785'
+      from: '+18156495036',
+      to: '+918017556334'
     })
     .then(message => console.log('SMS sent:', message.sid))
     .catch(error => console.error('Error sending SMS:', error));
@@ -132,8 +132,8 @@ function sendCall(room) {
   client.calls
     .create({
       twiml: '<Response><Say voice="alice">Fire Alert. There is a possible fire in your building.</Say></Response>',
-      from: '+12513579623',
-      to: '+917439491785'
+      from: '+18156495036',
+      to: '+918017556334'
     })
     .then(call => console.log(call.sid));
 }
