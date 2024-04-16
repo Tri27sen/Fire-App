@@ -62,7 +62,7 @@ app.post('/', async (req, res) => {
     console.log("the request is");
     console.log(req.body); // Log the request body directly
 
-    const requestData = req.body; // No need to parse req.body
+    const requestData = JSON.parse(req.body.data);
     console.log(requestData);
 
     // Extract AO and DO values from the parsed data
