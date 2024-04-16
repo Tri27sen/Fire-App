@@ -9,7 +9,7 @@ import twilio from 'twilio';
 import SensorData from './models/sensor.mjs';
 const url = "https://fire-app-tau.vercel.app/"
 console.log(process.env.TWILIO_SID, process.env.TWILIO_AUTH_TOKEN, process.env.TWILIO_PHONE_NUM);
-const accountSid = process.env.TWILIO_SID || '';
+const accountSid = 'ACe4497753125f9bba60329b7261052891';
 const authToken = process.env.TWILIO_AUTH_TOKEN || '';
 const phone = process.env.TWILIO_PHONE_NUM || '';
 const client = twilio(accountSid, authToken);
